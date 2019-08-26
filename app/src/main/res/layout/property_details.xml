@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_tab"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/m20">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pic_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/property_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/m10"
+                android:paddingBottom="@dimen/m10"
+                android:text="Property A"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Address"
+                android:textSize="@dimen/h5" />
+
+            <TextView
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type|size"
+                android:textSize="@dimen/h5" />
+
+            <TextView
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Status(leased etc)"
+                android:textSize="@dimen/h5" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/ppt_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_tab1" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/property_tab2" />
+            </android.support.design.widget.TabLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/details_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/property_element1"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/h1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Hide" />
+                    </RelativeLayout>
+
+                    <TableLayout
+                        android:id="@+id/room_tb"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/room1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Master Bedroom"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text=">" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/room2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Single Room 1"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text=">" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/property_element2"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/h2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Hide" />
+
+                    </RelativeLayout>
+
+                    <TableLayout
+                        android:id="@+id/property_expense_tb"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/e1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/property_expenses_1"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/e1p"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text="S$250" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/e3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/property_expenses_3"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/e3p"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text="-" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/e4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/property_expenses_4"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/e4p"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text="S$50" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/e5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/property_expenses_5"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/e5p"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text="S$80" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/e6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/property_expenses_6"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/e6p"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text="S$100" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/e7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/property_expenses_7"
+                                android:textSize="@dimen/h5" />
+
+                            <TextView
+                                android:id="@+id/e7p"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="right"
+                                android:text="S$25" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/property_element3"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/h3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Hide" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/manage_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/manage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/m10"
+                            android:layout_weight="1"
+                            android:background="@color/colorTransparent"
+                            android:drawableTop="@mipmap/ic_launcher_round"
+                            android:drawablePadding="@dimen/m10"
+                            android:onClick="goToPayments"
+                            android:text="@string/property_manage_tab1"
+                            android:textSize="@dimen/p1" />
+
+
+                        <Button
+                            android:id="@+id/btn1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/m10"
+                            android:layout_weight="1"
+                            android:background="@color/colorTransparent"
+                            android:drawableTop="@mipmap/ic_launcher_round"
+                            android:drawablePadding="@dimen/m10"
+                            android:onClick="goToProperties"
+                            android:text="@string/property_manage_tab2"
+                            android:textSize="@dimen/p1" />
+
+                        <Button
+                            android:id="@+id/btn2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/m10"
+                            android:layout_weight="1"
+                            android:background="@color/colorTransparent"
+                            android:drawableTop="@mipmap/ic_launcher_round"
+                            android:drawablePadding="@dimen/m10"
+                            android:onClick="goToDocuments"
+                            android:text="@string/property_manage_tab3"
+                            android:textSize="@dimen/p1" />
+
+                        <Button
+                            android:id="@+id/btn3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/m10"
+                            android:layout_weight="1"
+                            android:background="@color/colorTransparent"
+                            android:drawableTop="@mipmap/ic_launcher_round"
+                            android:drawablePadding="@dimen/m10"
+                            android:text="@string/property_manage_tab4"
+                            android:textSize="@dimen/p1" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/property_manage1"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/property_manage2"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/h4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Hide" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/m45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/property_manage3"
+                            android:textSize="@dimen/h2"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/h5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Hide" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/menu_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true">
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>

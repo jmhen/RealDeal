@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">RealDeal</string>
+    <!-- Login screen -->
+    <string name="email">Email</string>
+    <string name="pinPrompt">6-digit PIN</string>
+    <string name="sign_up">OPEN AN ACCOUNT</string>
+    <string name="sign_in">LOGIN</string>
+    <string name="no_such_user">No such user</string>
+    <string name="wrong_pin">Wrong PIN</string>
+
+    <!--Dashboard screen-->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="msg_tab1">Today</string>
+    <string name="msg_tab2">Payments</string>
+    <string name="manage_tab1">Payments</string>
+    <string name="manage_tab2">Properties</string>
+    <string name="manage_tab3">Documents</string>
+    <string name="manage_tab4">Add</string>
+    <string name="manage_title">Manage</string>
+    <string name="recent_activities_title">Recent Activities</string>
+
+    <!--Payments screen and sub-screens-->
+    <string name="payment_tab1">Pay</string>
+    <string name="payment_tab2">Request</string>
+    <string name="payment_tab3">Receipts</string>
+    <string name="payment_tab4">My QR</string>
+    <string name="this_month">This Month</string>
+    <string name="outstanding">Outstanding</string>
+    <string name="see_all">See All</string>
+
+    <!--//pay-->
+    <string name="pay_element1">Amount</string>
+    <string name="pay_element2">Description</string>
+    <string name="pay_element3">To</string>
+    <string name="pay_go_to_paylah">Go to PayLah app ></string>
+    <string name="pay_channel1">PayLah</string>
+    <string name="pay_channel2">Credit/Debit</string>
+    <string name="pay_channel3">iBanking</string>
+    <string name="payment_completed_msg">Payment Completed</string>
+    <!--//request-->
+    <string name="request_element1">Amount</string>
+    <string name="request_element2">From</string>
+    <string name="request_element3">Description</string>
+    <string name="request_element4">When</string>
+    <string name="request_completed_msg">Request Completed</string>
+    <!--//receipt-->
+    <string name="title_create_invoice">Create Invoice</string>
+    <string name="receipt_element1">Amount</string>
+    <string name="receipt_element2">Payee</string>
+    <string name="receipt_element3">Description</string>
+    <string name="receipt_element4">Date</string>
+    <string name="title_issue_receipt">Issue Receipt</string>
+
+    <string name="issue_receipt_element1">Received by</string>
+    <string name="issue_receipt_element2">From</string>
+    <string name="issue_receipt_element3">@string/payee</string>
+    <string name="issue_receipt_element4">Details</string>
+    <string name="payee_number">1</string>
+    <string name="title_send_receipt">Issue Receipt</string>
+    <string name="receipt_issued_msg">Receipt Issued!</string>
+
+
+
+
+
+
+    <!--Message View-->
+    <string name="msg_call">Call</string>
+    <string name="msg_for">for</string>
+    <string name="msg_rental_due">Rental Due</string>
+
+    <!--placeholders-->
+    <string name="name1">plumber</string>
+    <string name="estate1">Hougang</string>
+
+    <!--Contacts screen-->
+    <string name="all_contacts">All Contacts</string>
+    <string name="selected">selected</string>
+    <string name="create_new">new</string>
+    <string name="select">select</string>
+    <string name="done">done</string>
+
+
+
+    <!--actors-->
+    <string name="landlord">LandLord</string>
+    <string name="tenant">Tenant</string>
+    <string name="receipt">Receipt</string>
+    <string name="payee">Payee</string>
+    <string name="property_placeholder1">Property Name</string>
+
+
+    <!--Properties Screen-->
+    <string name="title_properties">My Properties</string>
+    <string name="property_tab1">Details</string>
+    <string name="property_tab2">Manage</string>
+
+    <string name="date_format">dd/mm</string>
+
+    <string name="property_expenses_1">Property Tax / mth:</string>
+    <string name="property_expenses_2">Property Loan:</string>
+    <string name="property_expenses_3">Annual Interest Rate on Loan:</string>
+    <string name="property_expenses_4">Management Fee:</string>
+    <string name="property_expenses_5">Utilities:</string>
+    <string name="property_expenses_6">Insurance:</string>
+    <string name="property_expenses_7">Maintenance/Repair:</string>
+    <string name="property_element1">Room</string>
+    <string name="property_element2">Property Expenses</string>
+    <string name="property_element3">Inventory/Furnishing</string>
+    
+    <string name="property_manage1">Tenants</string>
+    <string name="property_manage2">Rental Details</string>
+    <string name="property_manage3">Additional Information</string>
+
+    <string name="property_manage_tab1">Calendar</string>
+    <string name="property_manage_tab2">Chat</string>
+    <string name="property_manage_tab3">Doc</string>
+    <string name="property_manage_tab4">Payments</string>
+
+
+
+</resources>
+
