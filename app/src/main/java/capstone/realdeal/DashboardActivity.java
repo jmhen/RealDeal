@@ -33,7 +33,7 @@ public class DashboardActivity extends BaseActivity {
         getSupportActionBar().setTitle(R.string.title_dashboard);
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        msgTab = findViewById(R.id.msg_tab);
+        msgTab = findViewById(R.id.channel_tab);
 
         //getJSON(server,statusCollect);
         mRecyclerView = findViewById(R.id.msg_recycler);

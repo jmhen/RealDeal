@@ -31,6 +31,7 @@
         <activity android:name=".payment.RequestActivity"/>
         <activity android:name=".payment.CreateInvoice"/>
         <activity android:name=".PropertyDetails"/>
+        <activity android:name=".payment.PaymentMethods"/>
 
     </application>
 
