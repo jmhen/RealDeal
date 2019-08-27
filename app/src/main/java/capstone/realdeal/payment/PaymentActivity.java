@@ -1,6 +1,5 @@
 package capstone.realdeal.payment;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,8 +11,6 @@ import android.view.View;
 import java.util.ArrayList;
 
 import capstone.realdeal.BaseActivity;
-import capstone.realdeal.DocumentsManagement;
-import capstone.realdeal.PropertiesManagement;
 import capstone.realdeal.R;
 import capstone.realdeal.recycler.MsgAdapter;
 import capstone.realdeal.recycler.MsgPiece;
@@ -106,7 +103,7 @@ public class PaymentActivity extends BaseActivity {
         startActivity(gotoFavourate);
     }
     public void goToReceipt(View view) {
-        Intent gotoFavourate  =  new Intent(this, CreateInvoice.class);
+        Intent gotoFavourate  =  new Intent(this, ReceiptActivity.class);
         startActivity(gotoFavourate);
     }
 

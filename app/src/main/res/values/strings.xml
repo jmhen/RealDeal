@@ -50,14 +50,21 @@
     <string name="receipt_element3">Description</string>
     <string name="receipt_element4">Date</string>
     <string name="title_issue_receipt">Issue Receipt</string>
+    <string name="receipt_btn">Generate e-Receipt</string>
 
     <string name="issue_receipt_element1">Received by</string>
     <string name="issue_receipt_element2">From</string>
     <string name="issue_receipt_element3">@string/payee</string>
     <string name="issue_receipt_element4">Details</string>
     <string name="payee_number">1</string>
-    <string name="title_send_receipt">Issue Receipt</string>
+    <string name="title_send_receipt">Send Receipt</string>
     <string name="receipt_issued_msg">Receipt Issued!</string>
+    <string name="receipt_done_e1">From</string>
+    <string name="receipt_done_e2">To</string>
+    <string name="receipt_done_e3">Date&amp;Time </string>
+    <string name="receipt_done_e4">Description </string>
+    <string name="receipt_done_action1">Send PDF</string>
+    <string name="receipt_done_action2">Send QR Code</string>
 
 
 

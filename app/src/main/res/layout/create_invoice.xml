@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/m20">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/m10"
+            android:background="@drawable/roundedcorner_bg"
+            android:paddingLeft="@dimen/m20"
+            android:paddingTop="@dimen/m10"
+            android:paddingRight="@dimen/m20"
+            android:paddingBottom="@dimen/m20">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/receipt_element1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/payee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/m10"
+            android:background="@drawable/roundedcorner_bg"
+            android:paddingLeft="@dimen/m20"
+            android:paddingTop="@dimen/m10"
+            android:paddingRight="@dimen/m20"
+            android:paddingBottom="@dimen/m20">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_payee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/receipt_element2" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/m10"
+            android:background="@drawable/roundedcorner_bg"
+            android:paddingLeft="@dimen/m20"
+            android:paddingTop="@dimen/m10"
+            android:paddingRight="@dimen/m20"
+            android:paddingBottom="@dimen/m20">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/receipt_element3" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/m10"
+            android:background="@drawable/roundedcorner_bg"
+            android:paddingLeft="@dimen/m20"
+            android:paddingTop="@dimen/m10"
+            android:paddingRight="@dimen/m20"
+            android:paddingBottom="@dimen/m20">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/receipt_element4" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_tab"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="@dimen/m30"
+        android:layout_marginTop="@dimen/m30"
+        android:layout_marginEnd="@dimen/m30"
+        android:layout_marginBottom="@dimen/m30"
+        android:background="@drawable/roundedcorner_bg"
+        android:text="@string/receipt_btn"
+        android:onClick="generateBtnOnclick"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/menu_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true">
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+    </android.support.design.widget.TabLayout>
+</RelativeLayout>

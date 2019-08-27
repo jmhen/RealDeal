@@ -29,9 +29,8 @@
         <activity android:name=".DocumentsManagement"/>
         <activity android:name=".payment.PayActivity"/>
         <activity android:name=".payment.RequestActivity"/>
-        <activity android:name=".payment.CreateInvoice"/>
+        <activity android:name=".payment.ReceiptActivity"/>
         <activity android:name=".PropertyDetails"/>
-        <activity android:name=".payment.PaymentMethods"/>
 
     </application>
 

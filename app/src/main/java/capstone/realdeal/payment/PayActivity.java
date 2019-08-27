@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.renderscript.ScriptGroup;
 import android.support.design.widget.TextInputEditText;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +22,7 @@ public class PayActivity extends PaymentActivity {
         getSupportActionBar().setElevation(0);
 
         setContentView(R.layout.activity_pay);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 
@@ -34,16 +36,21 @@ public class PayActivity extends PaymentActivity {
                 i_amt = amtText.getText().toString();
                 i_description = desText.getText().toString();
                 i_to = toText.getText().toString();
-                Intent goToPayMethod = new Intent(PayActivity.this, PaymentMethods.class);
-                goToPayMethod.putExtra("amount",i_amt);
-                goToPayMethod.putExtra("description",i_description);
-                goToPayMethod.putExtra("to",i_to);
-                PayActivity.this.startActivity(goToPayMethod);
+                setContentView(R.layout.payment_methods);
 
             }
         });
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 
 }

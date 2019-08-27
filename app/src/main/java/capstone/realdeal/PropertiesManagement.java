@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 
@@ -55,5 +56,15 @@ public class PropertiesManagement extends BaseActivity {
         pAdapter = new PropertyCardAdapter(cardList); //here we assume the history items equals the collect items
         iRecyclerView.setAdapter(pAdapter);
         Log.d("adapter: " , "paymentAdapter");
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
