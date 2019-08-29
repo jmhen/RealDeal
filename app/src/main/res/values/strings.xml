@@ -128,6 +128,25 @@
     <string name="room_name2">Single Bedroom</string>
 
 
+    <!--Profile Page-->
+    <string name="title_profile">My Profile</string>
+    <string name="profile_property_overview">Property Overview</string>
+    <string name="profile_action1">Add New Property</string>
+    <string name="profile_action2">Payment Methods</string>
+    <string name="profile_action3">Invite a Tenant</string>
+    <string name="profile_action4">Invite a Landlord</string>
+
+    <!--Setting Page-->
+    <string name="title_setting">Settings</string>
+    <string name="settings_e1">Account</string>
+    <string name="settings_e2">About this app</string>
+    <string name="settings_e3">Logout</string>
+    <string name="settings_e4">Deactive Account</string>
+    <string name="account_action1">Edit Profile</string>
+    <string name="account_action2">Change Password</string>
+    <string name="about_action1">About RealDeal</string>
+    <string name="about_action2">Version</string>
+    <string name="about_action3">Terms of Service</string>
 
 </resources>
 

@@ -12,12 +12,13 @@ import java.util.ArrayList;
 
 import capstone.realdeal.BaseActivity;
 import capstone.realdeal.R;
+import capstone.realdeal.TabActivity;
 import capstone.realdeal.recycler.MsgAdapter;
 import capstone.realdeal.recycler.MsgPiece;
 import capstone.realdeal.recycler.PaymentCard;
 import capstone.realdeal.recycler.PaymentCardAdapter;
 
-public class PaymentActivity extends BaseActivity {
+public class PaymentActivity extends TabActivity {
 
     private ArrayList<PaymentCard> cardList = new ArrayList<>();
     private ArrayList<MsgPiece> msgList = new ArrayList<>();
@@ -52,6 +53,9 @@ public class PaymentActivity extends BaseActivity {
         getList();
         showPaymentCards();
         showPaymentMsg();
+
+        menu_tab = findViewById(R.id.menu_tab);
+        menu_tab.addOnTabSelectedListener(onMenuTabSelectedListener);
 
 
     }

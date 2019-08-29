@@ -16,7 +16,7 @@ import capstone.realdeal.recycler.MsgAdapter;
 import capstone.realdeal.recycler.MsgPiece;
 
 
-public class DashboardActivity extends BaseActivity {
+public class DashboardActivity extends TabActivity {
     private ArrayList<MsgPiece> msgList = new ArrayList<>();
     private RecyclerView mRecyclerView;
     private MsgAdapter todayAdapter;
@@ -73,7 +73,8 @@ public class DashboardActivity extends BaseActivity {
         });
 
 
-        //fqTab.addOnTabSelectedListener(onFqTabSelectedListener);
+        menu_tab = findViewById(R.id.menu_tab);
+        menu_tab.addOnTabSelectedListener(onMenuTabSelectedListener);
 
     }
     public void goToDocuments(View view) {

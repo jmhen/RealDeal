@@ -27,19 +27,19 @@ public class RoomDetails extends BaseActivity {
     LinearLayout details_sec;
     LinearLayout manage_sec;
     TabLayout tabs;
-    TextView property_name_text;
+    TextView room_name_text;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         room_name = getIntent().getStringExtra("room_name");
-        setContentView(R.layout.property_details);
+        setContentView(R.layout.room_details);
         getSupportActionBar().setTitle(room_name);
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        property_name_text = findViewById(R.id.property_name);
-        property_name_text.setText(room_name);
+        room_name_text = findViewById(R.id.room_name);
+        room_name_text.setText(room_name);
 
         mRecyclerView = findViewById(R.id.pic_recycler);
         LinearLayoutManager hManager = new LinearLayoutManager(RoomDetails.this);

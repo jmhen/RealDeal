@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_tab"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/m30">
+
+
+            <RelativeLayout
+                android:id="@+id/profile_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="goToSetting">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/m80"
+                    android:layout_height="@dimen/m80"
+                    android:layout_marginRight="@dimen/m20"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/m10"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginEnd="@dimen/m10"
+                    android:layout_marginBottom="@dimen/m10"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:text="Name"
+                    android:textSize="@dimen/h4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="@dimen/m10"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:text="Email/Singpass" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m20"
+                android:paddingBottom="@dimen/m10"
+                android:text="@string/profile_property_overview"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/n_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m20"
+                android:background="@drawable/bottom_line_bg"
+                android:gravity="left"
+                android:paddingTop="@dimen/m20"
+                android:paddingBottom="@dimen/m20"
+                android:text="@string/profile_action1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_line_bg"
+                android:gravity="left"
+                android:paddingTop="@dimen/m20"
+                android:paddingBottom="@dimen/m20"
+                android:text="@string/profile_action2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_line_bg"
+                android:gravity="left"
+                android:paddingTop="@dimen/m20"
+                android:paddingBottom="@dimen/m20"
+                android:text="@string/profile_action3" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_line_bg"
+                android:gravity="left"
+                android:paddingTop="@dimen/m20"
+                android:paddingBottom="@dimen/m20"
+                android:text="@string/profile_action4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/menu_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true">
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>

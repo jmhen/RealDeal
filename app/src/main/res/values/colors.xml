@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorTransparent">@android:color/transparent</color>
     <color name="colorTertiery">#D8F0ED</color>
+    <color name="colorDivider">#C7DAD7</color>
 </resources>

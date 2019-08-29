@@ -9,9 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import capstone.realdeal.BaseActivity;
 import capstone.realdeal.R;
 
-public class PayActivity extends PaymentActivity {
+public class PayActivity extends BaseActivity {
 
     private String i_amt,i_description,i_to;
     @Override

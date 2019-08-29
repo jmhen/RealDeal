@@ -11,17 +11,18 @@ import java.util.ArrayList;
 
 import capstone.realdeal.BaseActivity;
 import capstone.realdeal.R;
+import capstone.realdeal.TabActivity;
 import capstone.realdeal.recycler.PropertyCard;
 import capstone.realdeal.recycler.PropertyCardAdapter;
 
-public class PropertiesManagement extends BaseActivity {
+public class PropertiesManagement extends TabActivity {
 
     private ArrayList<PropertyCard> cardList = new ArrayList<>();
     private RecyclerView iRecyclerView;
     private PropertyCardAdapter pAdapter;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.my_properties);
@@ -36,6 +37,9 @@ public class PropertiesManagement extends BaseActivity {
 
         getList();
         showPropertyCards();
+        menu_tab = findViewById(R.id.menu_tab);
+        menu_tab.addOnTabSelectedListener(onMenuTabSelectedListener);
+
 
     }
 

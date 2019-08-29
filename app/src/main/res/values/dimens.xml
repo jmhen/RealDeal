@@ -7,6 +7,7 @@
     <dimen name="m45">45dp</dimen>
     <dimen name="m50">50dp</dimen>
     <dimen name="m60">60dp</dimen>
+    <dimen name="m80">80dp</dimen>
     <dimen name="m100">100dp</dimen>
     <dimen name="m150">150dp</dimen>
     <dimen name="m180">180dp</dimen>
