@@ -1,6 +1,5 @@
-package capstone.realdeal;
+package capstone.realdeal.property;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -15,13 +14,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import capstone.realdeal.payment.PaymentActivity;
-import capstone.realdeal.recycler.MsgAdapter;
+import capstone.realdeal.BaseActivity;
+import capstone.realdeal.R;
 import capstone.realdeal.recycler.ShowImageAdapter;
 
-public class PropertyDetails extends BaseActivity {
+public class RoomDetails extends BaseActivity {
 
-    private String property_name;
+    private String room_name;
     List<String> url_list = new ArrayList<>();
     ShowImageAdapter imageAdapter;
     RecyclerView mRecyclerView;
@@ -33,17 +32,17 @@ public class PropertyDetails extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        property_name = getIntent().getStringExtra("property_name");
+        room_name = getIntent().getStringExtra("room_name");
         setContentView(R.layout.property_details);
-        getSupportActionBar().setTitle(property_name);
+        getSupportActionBar().setTitle(room_name);
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         property_name_text = findViewById(R.id.property_name);
-        property_name_text.setText(property_name);
+        property_name_text.setText(room_name);
 
         mRecyclerView = findViewById(R.id.pic_recycler);
-        LinearLayoutManager hManager = new LinearLayoutManager(PropertyDetails.this);
+        LinearLayoutManager hManager = new LinearLayoutManager(RoomDetails.this);
         hManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         mRecyclerView.setLayoutManager(hManager);
 
@@ -94,9 +93,12 @@ public class PropertyDetails extends BaseActivity {
 
 
     public void createImageList(){
-        url_list.add("https://f10.baidu.com/it/u=1754964157,2742717649&fm=72");
-        url_list.add("https://f11.baidu.com/it/u=101053314,1184308983&fm=72");
-        url_list.add("https://f12.baidu.com/it/u=2532863132,623801812&fm=72");
+        url_list.add("https://yun12.qfangimg.com/group2/800x600/M00/6D/E7/CvtcKl08M8iAVGOKAAssHRdSYzM870.jpg");
+        url_list.add("https://yun4.qfangimg.com/group5/800x600/M00/06/F5/CvtcNV08Mk6APTbJAAhOhlQJhjk166.jpg");
+        url_list.add("https://yun10.qfangimg.com/group2/800x600/M00/6F/7A/CvtcKV08M_qAI3kdAAtMFVTga0c759.jpg");
+        url_list.add("https://yun12.qfangimg.com/group6/800x600/M00/06/DC/CvtcOl08MniAG8xSAApINBjUZns687.jpg");
+        url_list.add("https://yun10.qfangimg.com/group4/800x600/M00/6E/96/CvtcMl08NAiAFPgLAA29u7QabzA282.jpg");
+        url_list.add("https://yun4.qfangimg.com/group6/800x600/M00/06/DC/CvtcOl08MjWAW8otAAkXto2uQsA486.jpg");
 
     }
     @Override
@@ -112,7 +114,7 @@ public class PropertyDetails extends BaseActivity {
 
     private void showImg(){
         mRecyclerView.removeAllViews();
-        imageAdapter = new ShowImageAdapter(PropertyDetails.this); //here we assume the history items equals the collect items
+        imageAdapter = new ShowImageAdapter(RoomDetails.this); //here we assume the history items equals the collect items
         imageAdapter.setImageUrlList(url_list);
         mRecyclerView.setAdapter(imageAdapter);
         Log.d("adapter: " , "paymentAdapter");

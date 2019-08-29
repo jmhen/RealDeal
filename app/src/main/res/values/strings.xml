@@ -124,6 +124,9 @@
     <string name="property_manage_tab3">Doc</string>
     <string name="property_manage_tab4">Payments</string>
 
+    <string name="room_name1">Master Bedroom</string>
+    <string name="room_name2">Single Bedroom</string>
+
 
 
 </resources>

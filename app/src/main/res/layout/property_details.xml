@@ -85,7 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:visibility="invisible">
+                    android:visibility="visible">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -109,52 +109,28 @@
                             android:text="Hide" />
                     </RelativeLayout>
 
-                    <TableLayout
-                        android:id="@+id/room_tb"
+                    <LinearLayout
+                        android:id="@+id/room_list"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                        <TableRow
+                        <TextView
+                            android:id="@+id/room1"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/room_name1"
+                            android:textSize="@dimen/h5" />
 
-                            <TextView
-                                android:id="@+id/room1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Master Bedroom"
-                                android:textSize="@dimen/h5" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.5"
-                                android:gravity="right"
-                                android:text=">" />
-                        </TableRow>
-
-                        <TableRow
+                        <TextView
+                            android:id="@+id/room2"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/room2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="Single Room 1"
-                                android:textSize="@dimen/h5" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.5"
-                                android:gravity="right"
-                                android:text=">" />
-                        </TableRow>
-
-                    </TableLayout>
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Single Room 1"
+                            android:textSize="@dimen/h5" />
+                    </LinearLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -338,7 +314,8 @@
                     android:id="@+id/manage_sec"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="invisible">
 
                     <LinearLayout
                         android:id="@+id/manage"

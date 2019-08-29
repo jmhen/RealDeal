@@ -11,6 +11,7 @@ import android.view.View;
 import java.util.ArrayList;
 
 import capstone.realdeal.payment.PaymentActivity;
+import capstone.realdeal.property.PropertiesManagement;
 import capstone.realdeal.recycler.MsgAdapter;
 import capstone.realdeal.recycler.MsgPiece;
 

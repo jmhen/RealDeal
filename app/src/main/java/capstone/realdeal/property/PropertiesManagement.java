@@ -1,4 +1,4 @@
-package capstone.realdeal;
+package capstone.realdeal.property;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,8 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
+import capstone.realdeal.BaseActivity;
+import capstone.realdeal.R;
 import capstone.realdeal.recycler.PropertyCard;
 import capstone.realdeal.recycler.PropertyCardAdapter;
 
