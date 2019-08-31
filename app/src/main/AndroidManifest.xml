@@ -35,6 +35,7 @@
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".Setting"/>
         <activity android:name=".property.PropertyDocuments"/>
+        <activity android:name=".property.FolderDocs"/>
 
     </application>
 

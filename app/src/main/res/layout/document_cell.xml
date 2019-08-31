@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/m150"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_line_bg"
     android:padding="@dimen/m20">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="@dimen/m80"
-        android:layout_height="match_parent"
+        android:layout_width="@dimen/m60"
+        android:layout_height="@dimen/m80"
         android:layout_alignParentLeft="true"
         android:background="@color/colorPrimary" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/imageView"
         android:orientation="vertical"
         android:paddingLeft="@dimen/m20">
 
         <TextView
-            android:id="@+id/contract_name"
+            android:id="@+id/doc_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -29,7 +31,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/status"
+            android:id="@+id/info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/m10"

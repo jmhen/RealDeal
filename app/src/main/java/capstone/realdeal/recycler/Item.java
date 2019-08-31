@@ -7,9 +7,9 @@ public class Item {
         this.name = "name";
         this.status = "status";
     }
-    public Item(String m_str1,String m_str2){
-        this.name = m_str1;
-        this.name = m_str2;
+    public Item(String name,String status){
+        this.name = name;
+        this.status = status;
     }
 
     public String getName() {

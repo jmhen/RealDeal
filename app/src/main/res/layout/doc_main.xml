@@ -17,10 +17,11 @@
         app:srcCompat="@android:drawable/ic_input_add" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/recent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/recycler"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/menu_tab"
+        android:layout_alignParentTop="false"
         android:layout_alignParentBottom="false"
         android:padding="@dimen/m30"
         android:text="@string/doc_recent"
@@ -30,6 +31,7 @@
         android:id="@+id/recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/menu_tab"
         android:padding="@dimen/m30">
 
     </android.support.v7.widget.RecyclerView>

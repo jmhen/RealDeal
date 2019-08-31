@@ -1,5 +1,6 @@
 package capstone.realdeal.recycler;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,9 +11,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import capstone.realdeal.R;
+import capstone.realdeal.property.FolderDocs;
 
 public class FolderAdapter extends RecyclerView.Adapter<FolderAdapter.ViewHolder> {
-    private static final String TAG = "NormalAdaptor";
+    private static final String TAG = "FolderAdaptor";
 
     private ArrayList<String> mDataSet;
 
@@ -25,6 +27,15 @@ public class FolderAdapter extends RecyclerView.Adapter<FolderAdapter.ViewHolder
             super(v);
             // Define click listener for the ViewHolder's View.
             folder_name = (TextView) v.findViewById(R.id.folder_name);
+            v.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent viewFolder = new Intent(view.getContext(), FolderDocs.class);
+                    viewFolder.putExtra("folder_name",folder_name.getText());
+                    view.getContext().startActivity(viewFolder);
+
+                }
+            });
 
         }
 
