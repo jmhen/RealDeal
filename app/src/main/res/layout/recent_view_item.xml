@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/m150"
+    android:background="@drawable/rounded_up_corner_bg"
+    android:padding="@dimen/m20">
+
+    <TextView
+        android:id="@+id/property_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m10"
+        android:text="Personal"
+        android:textSize="@dimen/h2"
+        android:textStyle="bold" />
+</RelativeLayout>

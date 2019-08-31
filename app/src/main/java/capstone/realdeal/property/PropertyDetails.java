@@ -135,4 +135,11 @@ public class PropertyDetails extends BaseActivity {
         mRecyclerView.setAdapter(imageAdapter);
         Log.d("adapter: " , "paymentAdapter");
     }
+
+
+    public void goToPropertyDocument(View view) {
+        Intent go = new Intent(this, PropertyDocuments.class);
+        go.putExtra("property_name",property_name);
+        this.startActivity(go);
+    }
 }

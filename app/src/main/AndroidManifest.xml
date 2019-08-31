@@ -34,6 +34,7 @@
         <activity android:name=".property.RoomDetails"/>
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".Setting"/>
+        <activity android:name=".property.PropertyDocuments"/>
 
     </application>
 

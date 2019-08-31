@@ -359,7 +359,7 @@
                             android:background="@color/colorTransparent"
                             android:drawableTop="@mipmap/ic_launcher_round"
                             android:drawablePadding="@dimen/m10"
-                            android:onClick="goToDocuments"
+                            android:onClick="goToPropertyDocument"
                             android:text="@string/property_manage_tab3"
                             android:textSize="@dimen/p1" />
 

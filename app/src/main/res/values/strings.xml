@@ -148,5 +148,9 @@
     <string name="about_action2">Version</string>
     <string name="about_action3">Terms of Service</string>
 
+    <!--Document-->
+    <string name="title_document">Documents</string>
+    <string name="doc_recent">Recent</string>
+
 </resources>
 
