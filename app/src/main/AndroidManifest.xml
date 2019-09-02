@@ -36,6 +36,8 @@
         <activity android:name=".Setting"/>
         <activity android:name=".property.PropertyDocuments"/>
         <activity android:name=".property.FolderDocs"/>
+        <activity android:name=".chat.ShowContacts"/>
+        <activity android:name=".chat.ChatActivity"/>
 
     </application>
 

@@ -152,5 +152,16 @@
     <string name="title_document">Documents</string>
     <string name="doc_recent">Recent</string>
 
+    <!--Chat-->
+    <string name="title_chat">Chat</string>
+    <string name="chat_e1">Property Chats</string>
+    <string name="chat_e2">All Contacts</string>
+    <string name="chat_func0">Image</string>
+    <string name="chat_func1">Doc</string>
+    <string name="chat_func2">Task</string>
+    <string name="chat_func3">Request</string>
+    <string name="chat_func4">Pay</string>
+    <string name="chat_func5">Contact</string>
+
 </resources>
 

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTertiery">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m50"
+        android:layout_alignParentTop="true"
+        android:background="@color/semiTrans"
+        android:paddingLeft="@dimen/m20"
+        android:paddingRight="@dimen/m20">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Pinned Message / shortcut to group chat" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m60"
+            android:background="@drawable/rec_bg"
+            android:padding="@dimen/m10">
+
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/m10"
+                android:layout_marginRight="@dimen/m10"
+                android:layout_toLeftOf="@+id/add"
+                app:srcCompat="@android:drawable/ic_menu_send" />
+
+            <ImageView
+                android:id="@+id/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/m10"
+                app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/m10"
+                app:srcCompat="@android:drawable/ic_input_add"
+                android:onClick="showFunctions"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/add"
+                android:layout_toRightOf="@+id/voice"
+                android:background="@drawable/roundedcorner_bg"
+                android:ems="10"
+                android:hint="Let's say something"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/m20"
+                android:paddingRight="@dimen/m45" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/functions"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m250"
+            android:padding="@dimen/m20"
+            android:visibility="gone"
+            app:columnCount="3"
+            app:rowCount="2"
+            android:background="@color/white">
+
+            <Button
+                android:background="@color/colorTransparent"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:text="@string/chat_func0"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:background="@color/colorTransparent"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:text="@string/chat_func1"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:background="@color/colorTransparent"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:text="@string/chat_func2"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:background="@color/colorTransparent"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:text="@string/chat_func3"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:background="@color/colorTransparent"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:text="@string/chat_func4"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:background="@color/colorTransparent"
+                android:drawableTop="@mipmap/ic_launcher_round"
+                android:text="@string/chat_func5"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+
+        </android.support.v7.widget.GridLayout>
+    </LinearLayout>
+</RelativeLayout>

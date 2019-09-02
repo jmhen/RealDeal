@@ -346,7 +346,7 @@
                             android:background="@color/colorTransparent"
                             android:drawableTop="@mipmap/ic_launcher_round"
                             android:drawablePadding="@dimen/m10"
-                            android:onClick="goToProperties"
+                            android:onClick="goToContacts"
                             android:text="@string/property_manage_tab2"
                             android:textSize="@dimen/p1" />
 

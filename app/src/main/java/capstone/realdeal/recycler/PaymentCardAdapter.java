@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import capstone.realdeal.R;
 
 public class PaymentCardAdapter extends RecyclerView.Adapter<PaymentCardAdapter.ViewHolder> {
-    private static final String TAG = "MsgAdaptor";
+    private static final String TAG = "paymentCardAdaptor";
 
     private ArrayList<PaymentCard> mDataSet;
 
@@ -48,7 +48,7 @@ public class PaymentCardAdapter extends RecyclerView.Adapter<PaymentCardAdapter.
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         // Create a new view.
         View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.card_view, viewGroup, false);
+                .inflate(R.layout.payment_card_view, viewGroup, false);
 
         return new ViewHolder(v);
     }

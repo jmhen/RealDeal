@@ -19,6 +19,7 @@ import java.util.List;
 
 import capstone.realdeal.BaseActivity;
 import capstone.realdeal.R;
+import capstone.realdeal.chat.ShowContacts;
 import capstone.realdeal.recycler.ShowImageAdapter;
 
 public class PropertyDetails extends BaseActivity {
@@ -142,4 +143,11 @@ public class PropertyDetails extends BaseActivity {
         go.putExtra("property_name",property_name);
         this.startActivity(go);
     }
+
+    public void goToContacts(View view) {
+        Intent go = new Intent(this, ShowContacts.class);
+        go.putExtra("property_name",property_name);
+        this.startActivity(go);
+    }
+
 }
