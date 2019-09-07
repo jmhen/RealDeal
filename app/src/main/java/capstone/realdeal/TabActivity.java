@@ -11,7 +11,7 @@ public class TabActivity extends BaseActivity {
     protected Activity mActivity;
     protected TabLayout.OnTabSelectedListener onMenuTabSelectedListener;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mActivity = this;
         onMenuTabSelectedListener = new TabLayout.OnTabSelectedListener() {

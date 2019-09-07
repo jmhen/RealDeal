@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import capstone.realdeal.R;
+import capstone.realdeal.calendar.EventDetails;
 import capstone.realdeal.property.PropertyDetails;
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> {
@@ -34,10 +35,10 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Log.d(TAG, "Doc " + getAdapterPosition() + " clicked.");
-//                    Intent goToView = new Intent(v.getContext(), PropertyDetails.class);
-//                    goToView.putExtra("doc_name",doc_name.getText());
-//                    v.getContext().startActivity(goToView);
+                    Log.d(TAG, "Event " + getAdapterPosition() + " clicked.");
+                    Intent goToView = new Intent(v.getContext(), EventDetails.class);
+                    goToView.putExtra("event_name",name.getText());
+                    v.getContext().startActivity(goToView);
 
                 }
             });

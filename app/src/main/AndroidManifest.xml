@@ -41,6 +41,8 @@
         <activity android:name=".chat.ShowContacts"/>
         <activity android:name=".chat.ChatActivity"/>
         <activity android:name=".calendar.CalendarActivity"/>
+        <activity android:name=".calendar.NewEventActivity"/>
+        <activity android:name=".calendar.EventDetails"/>
 
 
     </application>

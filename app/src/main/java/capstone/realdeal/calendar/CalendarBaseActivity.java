@@ -11,13 +11,15 @@ import android.view.Window;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+import capstone.realdeal.TabActivity;
+
 
 /**
  * 基类
  * Created by huanghaibin on 2017/11/16.
  */
 
-public abstract class CalendarBaseActivity extends AppCompatActivity {
+public abstract class CalendarBaseActivity extends TabActivity {
 
     private static boolean isMiUi = false;
 

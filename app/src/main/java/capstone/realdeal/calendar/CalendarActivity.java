@@ -1,6 +1,7 @@
 package capstone.realdeal.calendar;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -38,7 +39,7 @@ public class CalendarActivity extends CalendarBaseActivity implements
     TextView mTextLunar;
 
     TextView mTextCurrentDay;
-    ImageView mPrev,mNext;
+    ImageView mAdd;
 
     private ArrayList<Event> eventList = new ArrayList<>();
     private CalendarView mCalendarView;
@@ -64,8 +65,8 @@ public class CalendarActivity extends CalendarBaseActivity implements
         mTextMonthDay = findViewById(R.id.tv_month_day);
         mTextYear = findViewById(R.id.tv_year);
         mTextLunar = findViewById(R.id.tv_lunar);
-        mPrev = findViewById(R.id.prev);
-        mNext = findViewById(R.id.next);
+
+        mAdd = findViewById(R.id.add);
 
         mRelativeTool = findViewById(R.id.rl_tool);
         mCalendarView = findViewById(R.id.calendarView);
@@ -86,19 +87,18 @@ public class CalendarActivity extends CalendarBaseActivity implements
         });
 
 
-//        mPrev.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mCalendarView.scrollToPre();
-//            }
-//        });
-//        mNext.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mCalendarView.scrollToNext();;
-//            }
-//        });
 
+        mAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent go = new Intent(CalendarActivity.this, NewEventActivity.class);
+                go.putExtra("date","data");
+                startActivity(go);
+            }
+        });
+
+        menu_tab = findViewById(R.id.menu_tab);
+        menu_tab.addOnTabSelectedListener(onMenuTabSelectedListener);
 
 
         mCalendarLayout = findViewById(R.id.calendarLayout);
@@ -118,6 +118,8 @@ public class CalendarActivity extends CalendarBaseActivity implements
         mRecycler.setLayoutManager(new LinearLayoutManager(CalendarActivity.this));
         getList();
         showAllEvents();
+
+
 
 
     }

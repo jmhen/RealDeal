@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
     tools:context="capstone.realdeal.calendar.CalendarActivity"
     tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
 
 
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <RelativeLayout
         android:id="@+id/rl_tool"
         android:layout_width="match_parent"
@@ -59,25 +64,13 @@
                 tools:ignore="SmallSp" />
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/prev"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="12dp"
-            android:layout_toLeftOf="@+id/next"
-            android:background="@drawable/bg_ripple"
-            android:padding="4dp"
-            android:src="@mipmap/ic_func"
-            android:tint="#333333" />
-
         <FrameLayout
             android:id="@+id/fl_current"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_centerVertical="true"
             android:layout_marginRight="12dp"
-            android:layout_toLeftOf="@+id/next"
+            android:layout_toLeftOf="@+id/add"
             android:background="@drawable/bg_ripple"
             android:visibility="gone">
 
@@ -103,17 +96,16 @@
         </FrameLayout>
 
         <ImageView
-            android:id="@+id/next"
+            android:id="@+id/add"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="12dp"
-            android:background="@drawable/bg_ripple"
             android:contentDescription="@string/app_name"
             android:padding="6dp"
             android:scaleType="centerInside"
-            android:src="@mipmap/ic_more"
+            android:src="@mipmap/ic_increase"
             android:tint="#333333" />
 
 
@@ -178,10 +170,42 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@color/white" />
 
 
     </com.haibin.calendarview.CalendarLayout>
+    </LinearLayout>
 
 
-</LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/menu_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        app:tabBackground="@color/white">
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@mipmap/ic_launcher_round" />
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>
