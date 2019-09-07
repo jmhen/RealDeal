@@ -10,8 +10,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,6 +19,7 @@ import capstone.realdeal.BaseActivity;
 import capstone.realdeal.R;
 import capstone.realdeal.chat.ShowContacts;
 import capstone.realdeal.recycler.ShowImageAdapter;
+import capstone.realdeal.calendar.CalendarActivity;
 
 public class PropertyDetails extends BaseActivity {
 
@@ -137,6 +136,12 @@ public class PropertyDetails extends BaseActivity {
         Log.d("adapter: " , "paymentAdapter");
     }
 
+
+    public void goToCalendar(View view) {
+        Intent go = new Intent(this, CalendarActivity.class);
+        go.putExtra("property_name",property_name);
+        this.startActivity(go);
+    }
 
     public void goToPropertyDocument(View view) {
         Intent go = new Intent(this, PropertyDocuments.class);

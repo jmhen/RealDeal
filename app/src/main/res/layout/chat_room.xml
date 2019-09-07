@@ -75,7 +75,7 @@
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/add"
                 android:layout_toRightOf="@+id/voice"
-                android:background="@drawable/roundedcorner_bg"
+                android:background="@drawable/shape_rec_round_corner"
                 android:ems="10"
                 android:hint="Let's say something"
                 android:inputType="textPersonName"

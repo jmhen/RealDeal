@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/m250"
             android:layout_margin="@dimen/m20"
-            android:background="@drawable/roundedcorner_bg"
+            android:background="@drawable/shape_rec_round_corner"
             android:padding="@dimen/m20">
 
             <TableLayout
@@ -117,7 +117,7 @@
         android:layout_marginTop="@dimen/m30"
         android:layout_marginEnd="@dimen/m30"
         android:layout_marginBottom="@dimen/m30"
-        android:background="@drawable/roundedcorner_bg"
+        android:background="@drawable/shape_rec_round_corner"
         android:text="Confirm"
         android:onClick="confirmBtnOnclick"/>
 

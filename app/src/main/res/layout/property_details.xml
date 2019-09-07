@@ -332,7 +332,7 @@
                             android:background="@color/colorTransparent"
                             android:drawableTop="@mipmap/ic_launcher_round"
                             android:drawablePadding="@dimen/m10"
-                            android:onClick="goToPayments"
+                            android:onClick="goToCalendar"
                             android:text="@string/property_manage_tab1"
                             android:textSize="@dimen/p1" />
 

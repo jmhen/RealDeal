@@ -11,6 +11,18 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-keep class your project path.MonthView {
+    public <init>(android.content.Context);
+}
+-keep class your project path.WeekBar {
+    public <init>(android.content.Context);
+}
+-keep class your project path.WeekView {
+    public <init>(android.content.Context);
+}
+-keep class your project path.YearView {
+    public <init>(android.content.Context);
+}
 
 # Uncomment this to preserve the line number information for
 # debugging stack traces.

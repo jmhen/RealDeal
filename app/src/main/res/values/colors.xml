@@ -8,4 +8,5 @@
     <color name="colorDivider">#C7DAD7</color>
     <color name="white">#FFFFFF</color>
     <color name="semiTrans">#8BFFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
