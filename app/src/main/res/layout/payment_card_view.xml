@@ -2,10 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="@dimen/m180"
     android:layout_height="@dimen/m100"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginRight="@dimen/m20"
     android:background="@drawable/shape_rec_round_corner"
     android:orientation="vertical"
     android:padding="@dimen/m10">
+
     <TextView
         android:id="@+id/text_property_name"
         android:layout_width="match_parent"
@@ -19,5 +21,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/date_format" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            app:srcCompat="@drawable/shape_calender_bg_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginRight="@dimen/m10" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            app:srcCompat="@drawable/shape_calender_bg_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10"
+            android:layout_marginRight="@dimen/m10" />
+    </TableRow>
 
 </LinearLayout>

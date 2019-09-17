@@ -1,11 +1,14 @@
 package capstone.realdeal;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -14,6 +17,8 @@ import capstone.realdeal.payment.PaymentActivity;
 import capstone.realdeal.property.PropertiesManagement;
 import capstone.realdeal.recycler.MsgAdapter;
 import capstone.realdeal.recycler.MsgPiece;
+import capstone.realdeal.util.CameraActivity;
+import capstone.realdeal.util.SearchActivity;
 
 
 public class DashboardActivity extends TabActivity {
@@ -31,9 +36,11 @@ public class DashboardActivity extends TabActivity {
         super.onCreate(savedInstanceState);
         asyncActivity = this;
         setContentView(R.layout.activity_dashboard);
-        getSupportActionBar().setTitle(R.string.title_dashboard);
-        getSupportActionBar().setElevation(0);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+
+
         msgTab = findViewById(R.id.channel_tab);
 
         //getJSON(server,statusCollect);
@@ -77,6 +84,48 @@ public class DashboardActivity extends TabActivity {
         menu_tab.addOnTabSelectedListener(onMenuTabSelectedListener);
 
     }
+
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.action_bar_menu, menu);
+        //使用代码来动态控制MenuItem的显示状态 or XML定义MenuItem的显示状态
+        //MenuItem share = menu.findItem(R.id.share);
+        MenuItem search = menu.findItem(R.id.search);
+        MenuItem camera = menu.findItem(R.id.camera);
+       // MenuItem save = menu.findItem(R.id.save);
+        search.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        camera.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        //redo.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        //save.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);*/
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.search:
+                showToast(R.string.menu_search);
+                Intent search = new Intent(DashboardActivity.this, SearchActivity.class);
+                startActivity(search);
+                break;
+            case R.id.camera:
+                showToast(R.string.menu_camera);
+                Intent shot = new Intent(DashboardActivity.this, CameraActivity.class);
+                startActivity(shot);
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
     public void goToDocuments(View view) {
         Intent gotoFavourate  =  new Intent(this, DocumentsManagement.class);
         gotoFavourate.putExtra("storeName", "SampleStore");

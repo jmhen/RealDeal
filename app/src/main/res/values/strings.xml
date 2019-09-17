@@ -187,5 +187,11 @@
         <item>周五</item>
         <item>周六</item>
     </string-array>
+
+    <!--Menu-->
+
+    <string name="menu_search">Search</string>
+    <string name="menu_close">Close</string>
+    <string name="menu_camera">Camera</string>
 </resources>
 
